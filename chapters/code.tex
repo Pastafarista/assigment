@@ -1,0 +1,162 @@
+\chapter{Código para la visualización del Box Counting}
+
+\section{Visualización de la recta y el cuadrado}
+
+\begin{lstlisting}[language=Python]
+from PIL import Image, ImageDraw
+
+def generar_imagen(n, path):
+        
+    A = (100,100)
+    B = (200,100)
+    
+    a = (300,100)
+    b = (400,100)
+    c = (300,200)
+    d = (400,200)
+        
+    img = Image.new('RGB', (500,300), color = 'white')
+        
+    # Segmento AB
+        
+    draw = ImageDraw.Draw(img, 'RGBA')
+    draw.line((A,B)*100, fill='black', width=1)
+        
+    # Cuadrado abcd
+        
+    draw.line((a,b), fill='black', width=1)
+    draw.line((b,d), fill='black', width=1)
+    draw.line((d,c), fill='black', width=1)
+    draw.line((c,a), fill='black', width=1)
+    
+    # Cajas del segmento AB
+    
+    for i in range(0,n):
+        a = (100+i*(1/n)*100,100+100*1/(2*n))
+        b = (100+i*(1/n)*100,100-100*1/(2*n))
+        c = (100+(i*100+100)*(1/n),100-100*1/(2*n))
+        d = (100+(i*100+100)*(1/n),100+100*1/(2*n))
+            
+        draw.polygon([a,b,c,d], fill=(0,100,180,50), outline='black', )
+        
+    # Cajas del cuadrado abcd
+        
+    for i in range(0,n):
+        for k in range(0,n):
+            a = (300+k*1/n*100,100+i*1/n*100)
+            b = (300+k*1/n*100,100+(i+1)*1/n*100)
+            c = (300+(k+1)*1/n*100,100+(i+1)*1/n*100)
+            d = (300+(k+1)*1/n*100,100+i*1/n*100)
+                
+            draw.polygon([a,b,c,d], fill=(0,100,180,50), outline='black')
+                
+    img.save(path)
+        
+if __name__ == "__main__":
+    N = (2,3,16)
+        
+    for i in N:
+        generar_imagen(i, 'boxcounting-' + str(N.index(i) + 1) + '.png')        
+\end{lstlisting}
+
+\section{Visualización del triángulo de Sierpinski}
+
+Créditos a \href{https://github.com/umnikos/Python-Pillow-Library---A-Basic-Example}{umnikos} por el código.
+
+\begin{lstlisting}[language=Python]
+from PIL import Image, ImageDraw
+import numpy as np
+    
+size = (512, 512)  # the size of the final image
+# create a new black and white image
+im = Image.new("1", size, 1)
+px = im.load()  # create a pixel access object
+    
+# takes a 4-tuple range of where to draw the sierpinski triangle
+def triangle(xy, fill=0, depth=5):
+    # if recursion is over, fill the top left pixel
+    if depth == 0:
+        px[xy[0], xy[1]] = fill
+        return
+    # otherwise, draw 3 smaller sierpinski triangles
+    triangle(
+        (
+            (3 * xy[0] + xy[2]) // 4,
+            xy[1],
+            (xy[0] + 3 * xy[2]) // 4,
+            (xy[1] + xy[3]) // 2,
+        ),
+        fill,
+        depth - 1,
+    )
+    triangle(
+        (
+            xy[0],
+            (xy[1] + xy[3]) // 2,
+            (xy[0] + xy[2]) // 2,
+            xy[3],
+        ),
+        fill,
+        depth - 1,
+    )
+    triangle(
+        (
+            (xy[0] + xy[2]) // 2,
+            (xy[1] + xy[3]) // 2,
+            xy[2],
+            xy[3],
+        ),
+        fill,
+        depth - 1,
+    )
+    
+# draw the triangle (smaller depths results in a dotty output)
+triangle((0, 0, size[0], size[1]), depth=10)
+            
+im.save("sierspinsky.png", "PNG")  # save the image
+\end{lstlisting}
+
+\section{Visualización de Box Counting para el triángulo de Sierpinski}
+
+\begin{lstlisting}[language=Python]
+import numpy as np
+from PIL import Image, ImageDraw
+
+triangle = Image.open('sierspinsky.png')
+
+# Cargar imagen como matriz de pixeles
+img_array = np.array(triangle)
+
+def check_pixel_square(top_point, size):
+    for i in range(0, size):
+        for k in range(0, size):
+            if img_array[top_point[1]+ i][top_point[0] + k] == False:
+                return True
+    return False
+
+def generate_image(n, path):
+    img = Image.new('RGB', (512,512), color = 'white')
+    img.paste(triangle, (0,0))
+
+    draw = ImageDraw.Draw(img, 'RGBA')
+
+    size = int(512 / n)
+
+    num_cajas = 0
+
+    for i in range(0, n):
+        for k in range(0, n):
+            if check_pixel_square((i*size,k*size), size):
+                draw.rectangle([(i*size,k*size),((i+1)*size,(k+1)*size)], fill=(0,100,180,50), outline='black', width=1)
+                num_cajas += 1
+
+    img.save(path)
+    print(num_cajas)
+    
+if __name__ == "__main__":
+    
+    N = (2,4,8,16)
+    
+    for i in N:
+        generate_image(i, 'boxcounting-sierspinsky-' + str(N.index(i) + 1) + '.png')
+\end{lstlisting}

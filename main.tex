@@ -1,7 +1,6 @@
 \documentclass{report}
 
 % Packages
-
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
@@ -9,6 +8,18 @@
 \usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{listings}
+\usepackage{hyperref}
+\input{listing-settings}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definición}[section]
@@ -27,5 +38,9 @@
 \listoffigures
 
 \include{chapters/introduction}
+
+\appendix
+
+\include{chapters/code}
 
 \end{document}
