@@ -10,6 +10,8 @@
 \usepackage{float}
 \usepackage{listings}
 \usepackage{hyperref}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{url}
 \input{listing-settings}
 
 \hypersetup{
@@ -24,14 +26,38 @@
 \theoremstyle{definition}
 \newtheorem{definition}{Definición}[section]
 
-\title{Fractales\\
-{\large U-tad - Centro Universitario de Tecnología y Arte Digital}}
-\author{Antonio Cabrera y Alejandro Gómez}
-\date{Noviembre 2023}
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        \Large\textbf{Fractales}
+ 
+        \vspace{0.5cm}
+         Ejemplos, historia y aplicaciones
+             
+        \vspace{1.5cm}
+ 
+        \textbf{Antonio Cabrera y Alejandro Gómez}
+ 
+        \vfill
+             
+        Trabajo para el doble grado de\\
+        Ingeniería del Software y Matemática Computacional\\
+             
+        \vspace{0.8cm}
+      
+        \includegraphics[width=0.4\textwidth]{figures/logo u-tad.png}
+             
+        Asignatura de topología\\
+        U-tad\\
+        España\\
+        Noviembre 2023
+             
+    \end{center}
+ \end{titlepage}
 
 \tableofcontents
 
@@ -39,8 +65,14 @@
 
 \include{chapters/introduction}
 
+\include{chapters/history}
+
 \appendix
 
 \include{chapters/code}
+
+\bibliographystyle{plainurl}
+\bibliography{bibliography.bib}
+
 
 \end{document}

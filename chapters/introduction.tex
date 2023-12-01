@@ -2,20 +2,20 @@
 
 \section{¿Qué es un fractal?}
 
-La definición más inmediata que tenemos de los fractales es la siguiente:
+\noindent La definición más inmediata que tenemos de los fractales es la siguiente:
 
 \begin{definition}
-    Un fractal es un objeto geométrico cuya estructura básica, fragmentada o irregular, se repite a diferentes escalas.
+    Un fractal es un objeto geométrico cuya estructura básica, fragmentada o irregular, se repite a diferentes escalas. \cite{Wikipedia_2023}
 \end{definition}
 
 \noindent Que su estructura básica se repita a diferentes escalas significa que el objeto es autosimilar.
 
 \section{Autosimilitud}
 
-Benoît Mandelbrot la definió como sigue:
+\noindent Benoît Mandelbrot la definió como sigue:
 
 \begin{definition}
-    Un objeto es autosimilar o autosemejante si sus partes tienen la misma forma o estructura que el todo, aunque pueden presentarse a diferente escala y pueden estar ligeramente deformadas.
+    Un objeto es autosimilar o autosemejante si sus partes tienen la misma forma o estructura que el todo, aunque pueden presentarse a diferente escala y pueden estar ligeramente deformadas. \cite{Wikipedia_2023}
 \end{definition}
 
 \noindent
@@ -24,11 +24,10 @@ Benoît Mandelbrot la definió como sigue:
 \subsection{Autosimilitud exacta}
 
 \begin{definition}
-    Un objeto es exactamente autosimilar si es exactamente igual a sí mismo a diferentes escalas..
+    Un objeto es exactamente autosimilar si es exactamente igual a sí mismo a diferentes escalas.. \cite{Wikipedia_2023}
 \end{definition}
 
-\noindent
-Es la más restrictiva de todas y la que vemos en los fractales clásicos. Algunos ejemplos de objetos exactamente autosimilares son:
+\noindent Es la más restrictiva de todas y la que vemos en los fractales clásicos. Algunos ejemplos de objetos exactamente autosimilares son:
 
 \begin{itemize}
     \item El triángulo de Sierpinski
@@ -52,7 +51,7 @@ Es la más restrictiva de todas y la que vemos en los fractales clásicos. Algun
 \subsection{Cuasiautosimilitud}
 
 \begin{definition}
-    Un objeto es cuasiautosimilar si es aproximadamente igual a sí mismo a diferentes escalas.
+    Un objeto es cuasiautosimilar si es aproximadamente igual a sí mismo a diferentes escalas. \cite{Wikipedia_2023}
 \end{definition}
 
 \noindent
@@ -64,13 +63,12 @@ Los fractales de este tipo contienen copias menores y distorsionadas de si mismo
     \caption{Ejemplos de cuasiautosimilitud en el conjunto de Mandelbrot}
 \end{figure}
 
-
 \section{Definición más formal}
 
 \noindent En 1982 Benoît Mandelbrot definió los fractales de la siguiente forma:
 
 \begin{definition}
-Un fractal es un conjunto cuya dimensión de Hausdorff-Besicovitch es estrictamente mayor que su dimensión topológica.
+Un fractal es un conjunto cuya dimensión de Hausdorff-Besicovitch es estrictamente mayor que su dimensión topológica. \cite{Atencia_2014}
 \end{definition}
 
 \noindent La dimensión topológica es la dimensión que todos conocemos, la dimensión de Hausdorff-Besicovitch es una de las formas de calcular la dimensión fractal de un objeto. 
@@ -83,7 +81,7 @@ Un fractal es un conjunto cuya dimensión de Hausdorff-Besicovitch es estrictame
 
 \noindent Ya hemos visto que una de las formas de calcular la dimensión fractal de un objeto es la dimensión de Hausdorff-Besicovitch, sin embargo esta resulta algo compleja. Otra forma más sencilla es con el método de \textit{Box Counting} también llamado o también conocido como la dimensión de Minkowski-Bouligard.\\
 
-\noindent Para entender mejor este método vamos a verlo con un ejemplo. Consideremos un segemento y el borde de un cuadrado ambos de lado $1$.
+\noindent Para entender mejor este método vamos a verlo con un ejemplo. Consideremos un segemento y el borde de un cuadrado ambos de lado $1$. \cite{youtube-2022}
 
 \begin{figure}[H]
     \centering
@@ -122,12 +120,13 @@ Un fractal es un conjunto cuya dimensión de Hausdorff-Besicovitch es estrictame
 \end{equation}
 
 \begin{definition}
-    La dimensión de Minkowski-Bouligard de un conjunto $A$ es el límite de la expresión
+    La dimensión de Minkowski-Bouligard de un conjunto $A$ es el límite de la expresión \cite{Wikipedia_2023}
     \begin{equation}
         \lim_{\epsilon \to 0} \frac{\log N(\epsilon)}{\log \frac{1}{\epsilon}}
     \end{equation}
     donde $N(\epsilon)$ es el mínimo de bolas de radio $\epsilon$ necesarias para recubrir el conjunto.
 \end{definition}
+
 
 \noindent Ahora vamos a ver que ocurre cuando intentamos calcular la dimensión de Minkowski-Bouligard de un fractal, como por ejemplo el triángulo de Sierpinski de base $1$.\\
 
@@ -173,4 +172,4 @@ Si definimos $N(n)$ como el número de cajas de lado $\frac{1}{2^n}$ necesarias 
     \end{split}
 \end{equation}
 
-\noindent Como ya hemos comentado antes, nos sale un número real. Nuestra intuición nos sugiere que el triángulo de Sierpinski es \textit{"más que una curva"} pero \textit{"menos que una superficie"}\\
+\noindent Como ya hemos comentado antes, nos sale un número real. Nuestra intuición nos sugiere que el triángulo de Sierpinski es \textit{"más que una curva"} pero \textit{"menos que una superficie"}. \cite{Atencia_2014}\\
