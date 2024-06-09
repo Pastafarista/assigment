@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/history.aux
+A level-1 auxiliary file: chapters/l-systems.aux
+A level-1 auxiliary file: chapters/examples.aux
+A level-1 auxiliary file: chapters/applications.aux
+A level-1 auxiliary file: chapters/code.aux
+The style file: plainurl.bst
+Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=8) to 20 items from 10.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Database file #1: bibliography.bib
+You've used 16 entries,
+            2943 wiz_defined-function locations,
+            739 strings with 7998 characters,
+and the built_in function-call counts, 5286 in all, are:
+= -- 540
+> -- 128
+< -- 0
++ -- 49
+- -- 32
+* -- 151
+:= -- 728
+add.period$ -- 53
+call.type$ -- 16
+change.case$ -- 64
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 134
+empty$ -- 631
+format.name$ -- 32
+if$ -- 1490
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 0
+newline$ -- 88
+num.names$ -- 32
+pop$ -- 213
+preamble$ -- 1
+purify$ -- 48
+quote$ -- 0
+skip$ -- 440
+stack$ -- 0
+substring$ -- 81
+swap$ -- 16
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 0
+while$ -- 32
+width$ -- 18
+write$ -- 173

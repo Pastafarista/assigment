@@ -1,0 +1,88 @@
+\begin{thebibliography}{10}
+
+\bibitem{fractales-img}
+Varios autores.
+\newblock Los fractales una aplicación de las matematicas en la imagen, 2006.
+\newblock URL: \url{https://www.repo-ciie.dfie.ipn.mx/pdf/1060.pdf}.
+
+\bibitem{compresion-fractal}
+Lucas~Damian Catalano.
+\newblock Compresión fractal de imágenes digitales, noviembre 2011.
+\newblock URL: \url{https://mate.dm.uba.ar/~umolter/materias/geo-fractal-2-11/apunte-lucas.pdf}.
+
+\bibitem{Wikipedia_2023}
+Wikipedia contributors.
+\newblock Fractal.
+\newblock \url{https://es.wikipedia.org/wiki/Fractal}, noviembre 2023.
+\newblock Accessed: 29-11-2023.
+
+\bibitem{Wikipedia_Mandelbrot}
+Wikipedia contributors.
+\newblock Mandelbrot set.
+\newblock \url{https://en.wikipedia.org/wiki/Mandelbrot_set}, novembre 2023.
+\newblock Accessed: 02-12-2023.
+
+\bibitem{web-2023}
+Dmytro Fedoriaka.
+\newblock L-systems | dmitriy fedoriaka's website.
+\newblock \url{https://fedimser.github.io/l-systems.html}, 2023.
+
+\bibitem{BBVA-2020}
+Dory Gascueña.
+\newblock Aplicaciones de la geometría fractal: del cambio climático al cáncer, agosto 2020.
+\newblock URL: \url{https://www.bbvaopenmind.com/ciencia/matematicas/aplicaciones-la-geometria-fractal-del-cambio-climatico-al-cancer/}.
+
+\bibitem{complejidad}
+Emil~Alvarado González.
+\newblock Historia de los fractales y de su geometría, marzo 2017.
+\newblock URL: \url{https://complejidad.net/2017/03/21/historia-de-los-fractales-y-de-su-geometria/}.
+
+\bibitem{balls}
+Antonio~Cabrera Landín.
+\newblock balls.
+\newblock \url{https://github.com/Pastafarista/balls}, octubre 2023.
+
+\bibitem{Medina_2011}
+Miguel Ángel~Morales Medina.
+\newblock ¿qué es el conjunto de mandelbrot?: historia y construcción, noviembre 2011.
+\newblock URL: \url{https://www.gaussianos.com/%C2%BFque-es-el-conjunto-de-mandelbrot-historia-y-construccion/}.
+
+\bibitem{youtube-2022}
+Mates Mike.
+\newblock Dimensión fractal: El copo de nieve de koch.
+\newblock \url{https://www.youtube.com/watch?v=eKY_1j9VrEA}, 2022.
+
+\bibitem{youtube-2016}
+Hiro Shimoyama.
+\newblock The relationship between chaos, fractal and physics.
+\newblock \url{https://www.youtube.com/watch?v=C5Jkgvw-Z6E}, 2016.
+
+\bibitem{Atencia_2014}
+Vanessa~Atencia Toro.
+\newblock {\em {Fractales matemáticos}}.
+\newblock Tfg, Facultad de Matemáticas - Universidad de Barcelona, enero 2014.
+\newblock URL: \url{https://diposit.ub.edu/dspace/bitstream/2445/54228/1/memoria.pdf}.
+
+\bibitem{geologia}
+Donald~L. Turcotte.
+\newblock Fractals in geology: What are they and what are they good for?, enero 1991.
+\newblock URL: \url{https://rock.geosociety.org/net/gsatoday/archive/1/1/pdf/i1052-5173-1-1-sci.pdf}.
+
+\bibitem{eswiki:l-systems}
+Wikipedia.
+\newblock Sistema-l --- wikipedia{,} la enciclopedia libre, 2022.
+\newblock [Internet; descargado 20-febrero-2022].
+\newblock URL: \url{https://es.wikipedia.org/w/index.php?title=Sistema-L&oldid=141801563}.
+
+\bibitem{eswiki:copo-koch}
+Wikipedia.
+\newblock Copo de nieve de koch --- wikipedia{,} la enciclopedia libre, 2023.
+\newblock [Internet; descargado 15-octubre-2023].
+\newblock URL: \url{https://es.wikipedia.org/w/index.php?title=Copo_de_nieve_de_Koch&oldid=154637466}.
+
+\bibitem{ADN}
+Eduardo Sánchez~Ortega y~Laura Vargas-Parada.
+\newblock Nuevas formas para determinar fractales en el adn, julio 2018.
+\newblock URL: \url{https://www.c3.unam.mx/boletines/boletin26.html}.
+
+\end{thebibliography}
